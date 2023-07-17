@@ -1,0 +1,73 @@
+nav {
+    position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 15px rgb(17, 17, 17);
+    width: 100%;
+    background-color: rgb(3, 78, 92);
+    display: grid;
+    text-align: center;
+    grid-template-columns: 22% 50% 20% 5%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav>h2 {
+    margin: auto;
+    font-weight: 700;
+    padding: 15px;
+}
+.cartchild{
+    display: flex;
+    align-items: center;
+}
+.cartchild>p{
+    margin-top:-5px;
+    padding: 0.1px 5px;
+    background-color: goldenrod;
+    border-radius: 10px;
+}
+div>input {
+    margin: auto;
+    max-width: 35em;
+    min-width: 35em;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 15px;
+    min-height: 45px;
+    max-height: 45px;
+    background-color: rgb(4, 60, 70);
+    border-radius: 25px;
+}
+
+div>#searchIcon {
+    position: absolute;
+    margin: 12px 0 0 -40px;
+}
+
+nav>a {
+    margin: auto;
+    color: rgb(1, 24, 29);
+    padding: auto;
+    position: relative;
+}
+
+nav>a:hover {
+    color: rgb(209, 214, 218);
+    transition: .5s;
+}
+
+nav>a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(5, 43, 82);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+
+nav>a:hover::after {
+    width: 100%;
+}

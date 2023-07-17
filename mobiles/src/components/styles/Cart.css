@@ -1,0 +1,77 @@
+.cart {
+    margin: 5em auto auto auto;
+    min-width: 57%;
+    max-width: 57%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: column nowrap
+}
+
+.cart>h1 {
+    font-weight: 600;
+}
+
+thead>tr>th {
+    background-color: rgb(4, 60, 70);
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.empty {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+tbody>tr>td {
+    background-color: rgb(22, 22, 22);
+    padding: 10px;
+    color: rgb(153, 150, 150);
+    font-weight: 500;
+    font-size: large;
+}
+
+.quantitybtn:disabled {
+    cursor: not-allowed;
+}
+
+.quantitybtn {
+    background-color: rgb(7, 83, 108);
+    color: aliceblue;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 50px;
+    margin: 0px 8px
+}
+
+.quantitybtn:hover {
+    box-shadow: 2px 2px 5px rgb(51, 50, 50);
+    transition-duration: 0.2s;
+    transform: scale(1.1);
+}
+
+tbody>tr>td:nth-child(6) {
+    background-color: rgba(41, 41, 43, 0.979);
+}
+
+.removeBtn {
+    background-color: rgb(94, 5, 23);
+    border: none;
+    border-radius: 50px;
+    padding: 8px 10px;
+}
+
+.removeBtn:hover {
+    box-shadow: 2px 2px 5px rgb(23, 23, 23);
+    color: rgb(10, 10, 10);
+    transition-duration: 0.3s;
+    transform: scale(1.1);
+}
+
+.cart>div>h3 {
+    text-align: right;
+    margin-right: 4em
+}

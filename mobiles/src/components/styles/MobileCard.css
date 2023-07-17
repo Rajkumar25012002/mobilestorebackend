@@ -1,0 +1,53 @@
+.mobiles {
+    margin: 5em;
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mobiles>div {
+    margin: 1em 1em 1em 1em;
+    padding: 2em 0;
+    background-color: rgb(28, 27, 27);
+    border-radius: 25px;
+    transition: .5s;
+    max-height: 16px ;
+    min-height: 16em;
+    max-width: 15em;
+    min-width: 15em;
+}
+
+.mobiles>div:hover {
+    box-shadow: 3px 3px 8px rgb(0, 0, 0);
+    transition-duration: 0.3s;
+}
+
+.mobileImg>img {
+    display: block;
+    margin: 10px auto;
+    min-width: 3.4cm;
+    min-height: 4.5cm;
+    max-width: 3.4cm;
+    max-height: 4.5cm;
+
+}
+
+.mobileContent {
+    background-color: rgb(8, 66, 77);
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+.mobileContent>h3 {
+    padding-top: 10px;
+    font-weight: 600;
+    color: rgb(177, 173, 173);
+}
+
+.mobileContent>h2 {
+    color: rgb(177, 174, 174);
+    font-weight: 400;
+    font-size: 20px;
+}

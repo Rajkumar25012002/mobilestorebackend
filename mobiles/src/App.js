@@ -16,7 +16,7 @@ function App() {
     axios
       .get("http://localhost:8000/")
       .then((response) => JSON.stringify(response.data.allDetails))
-      .then((data) => setCartData(JSON.parse(data))).then(setCartLen(cartData.length));
+      .then((data) => setCartData(JSON.parse(data))).then(setCartLen(cartData.length)).catch(err=>console.log(err));
   });
   return (
     <div className="App">

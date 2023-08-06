@@ -1,14 +1,13 @@
 import mongoose from "mongoose";
-
-const url = `mongodb://127.0.0.1:27017/mobile`;
+import  "dotenv/config";
+const url = process.env.MONGO_URL;
 
 const connectionParams={
     useNewUrlParser: true,
-    useCreateIndex: true,
     useUnifiedTopology: true 
 };
 
-mongoose.connect(url)
+mongoose.connect(url,connectionParams)
     .then( () => { 
         console.info('Connected to database ')
     })
